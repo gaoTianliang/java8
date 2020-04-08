@@ -99,10 +99,6 @@ import sun.misc.SharedSecrets;
  * @param <K> the type of keys maintained by this map
  * @param <V> the type of mapped values
  *
- * @author  Doug Lea
- * @author  Josh Bloch
- * @author  Arthur van Hoff
- * @author  Neal Gafter
  * @see     Object#hashCode()
  * @see     Collection
  * @see     Map
@@ -206,9 +202,9 @@ public class HashMap<K,V> extends AbstractMap<K,V>
      */
 
     /**
-     * The default initial capacity - MUST be a power of two.
+     * 默认的容量，必须是2的幂
      */
-    static final int DEFAULT_INITIAL_CAPACITY = 1 << 4; // aka 16
+    static final int DEFAULT_INITIAL_CAPACITY = 1 << 4; // aka（又称作） 16
 
     /**
      * The maximum capacity, used if a higher value is implicitly specified
