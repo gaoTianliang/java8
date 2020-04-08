@@ -1,28 +1,3 @@
-/*
- * Copyright (c) 1997, 2014, Oracle and/or its affiliates. All rights reserved.
- * ORACLE PROPRIETARY/CONFIDENTIAL. Use is subject to license terms.
- *
- *
- *
- *
- *
- *
- *
- *
- *
- *
- *
- *
- *
- *
- *
- *
- *
- *
- *
- *
- */
-
 package java.util;
 
 import java.util.function.UnaryOperator;
@@ -93,8 +68,6 @@ import java.util.function.UnaryOperator;
  *
  * @param <E> the type of elements in this list
  *
- * @author  Josh Bloch
- * @author  Neal Gafter
  * @see Collection
  * @see Set
  * @see ArrayList
@@ -109,22 +82,13 @@ import java.util.function.UnaryOperator;
  */
 
 public interface List<E> extends Collection<E> {
-    // Query Operations
+    // 查询操作
 
     /**
-     * Returns the number of elements in this list.  If this list contains
-     * more than <tt>Integer.MAX_VALUE</tt> elements, returns
-     * <tt>Integer.MAX_VALUE</tt>.
-     *
-     * @return the number of elements in this list
+     * 返回list元素的数量，如果数量超过int范围，返回int最大值
      */
     int size();
 
-    /**
-     * Returns <tt>true</tt> if this list contains no elements.
-     *
-     * @return <tt>true</tt> if this list contains no elements
-     */
     boolean isEmpty();
 
     /**
@@ -210,8 +174,7 @@ public interface List<E> extends Collection<E> {
      */
     <T> T[] toArray(T[] a);
 
-
-    // Modification Operations
+    // 修改操作
 
     /**
      * Appends the specified element to the end of this list (optional
@@ -260,8 +223,7 @@ public interface List<E> extends Collection<E> {
      */
     boolean remove(Object o);
 
-
-    // Bulk Modification Operations
+    // 批量修改操作
 
     /**
      * Returns <tt>true</tt> if this list contains all of the elements of the
