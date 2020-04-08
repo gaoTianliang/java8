@@ -1,28 +1,3 @@
-/*
- * Copyright (c) 1994, 2013, Oracle and/or its affiliates. All rights reserved.
- * ORACLE PROPRIETARY/CONFIDENTIAL. Use is subject to license terms.
- *
- *
- *
- *
- *
- *
- *
- *
- *
- *
- *
- *
- *
- *
- *
- *
- *
- *
- *
- *
- */
-
 package java.util;
 
 import java.text.DateFormat;
@@ -120,9 +95,6 @@ import sun.util.calendar.ZoneInfo;
  * not fall within the indicated ranges; for example, a date may be
  * specified as January 32 and is interpreted as meaning February 1.
  *
- * @author  James Gosling
- * @author  Arthur van Hoff
- * @author  Alan Liu
  * @see     java.text.DateFormat
  * @see     java.util.Calendar
  * @see     java.util.TimeZone
@@ -275,7 +247,7 @@ public class Date
     }
 
     /**
-     * Return a copy of this object.
+     * 返回这个对象的复制
      */
     public Object clone() {
         Date d = null;
