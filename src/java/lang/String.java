@@ -101,25 +101,10 @@ public final class String implements java.io.Serializable, Comparable<String>, C
     }
 
     /**
-     * Allocates a new {@code String} that contains characters from a subarray
-     * of the character array argument. The {@code offset} argument is the
-     * index of the first character of the subarray and the {@code count}
-     * argument specifies the length of the subarray. The contents of the
-     * subarray are copied; subsequent modification of the character array does
-     * not affect the newly created string.
-     *
-     * @param  value
-     *         Array that is the source of characters
-     *
-     * @param  offset
-     *         The initial offset
-     *
-     * @param  count
-     *         The length
-     *
-     * @throws  IndexOutOfBoundsException
-     *          If the {@code offset} and {@code count} arguments index
-     *          characters outside the bounds of the {@code value} array
+     * 从字符数组中顺序拼接字符串
+     * @param value 原始数组
+     * @param offset 开始拼接位置
+     * @param count 拼接数量
      */
     public String(char value[], int offset, int count) {
         if (offset < 0) {
@@ -150,24 +135,9 @@ public final class String implements java.io.Serializable, Comparable<String>, C
      * {@code char}s; subsequent modification of the {@code int} array does not
      * affect the newly created string.
      *
-     * @param  codePoints
-     *         Array that is the source of Unicode code points
-     *
-     * @param  offset
-     *         The initial offset
-     *
-     * @param  count
-     *         The length
-     *
-     * @throws  IllegalArgumentException
-     *          If any invalid Unicode code point is found in {@code
-     *          codePoints}
-     *
-     * @throws  IndexOutOfBoundsException
-     *          If the {@code offset} and {@code count} arguments index
-     *          characters outside the bounds of the {@code codePoints} array
-     *
-     * @since  1.5
+     * @param  codePoints Array that is the source of Unicode code points
+     * @param  offset The initial offset
+     * @param  count The length
      */
     public String(int[] codePoints, int offset, int count) {
         if (offset < 0) {
